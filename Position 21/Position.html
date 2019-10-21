@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Posttions</title>
+	<style>
+	img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	}
+	.container{
+		position: relative;
+	}
+	.topleft{
+		position: absolute;
+		top: 8px;
+		left:16px;
+		font-size: 18px;
+		margin:20px;
+	}
+	.topright{
+		position: absolute;
+		top: 8px;
+		right:16px;
+		font-size: 18px;
+		margin:20px;
+	}
+	
+	.bottom-left{
+		position: absolute;
+		bottom:8px;
+		left:16px;
+		font-size: 18px;
+		margin:20px;
+	}
+	.bottom-right{
+		position: absolute;
+		bottom:8px;
+		right:16px;
+		font-size: 18px;
+		margin:20px;
+
+	}
+	.center {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+	<h2 style="text-align: center;font-size: 40px;">Positions</h2>
+	<p  style="text-align: center;font-size: 30px;">Add some text to an image in the top left corner,top right,centere,bottom left,bottom right:</p>
+	<div class="container">
+		<img src="Badshahi-Mosque-Lahore.jpg" alt=Badshahi-Mosque-Lahore width"100%" height="auto">
+	<div class="topleft"><b>Top Left</b></div>
+	<div class="topright"><b>Top Right</b></div>
+	<div class="bottom-left"><b>Bottom Left</b></div>
+	<div class="bottom-right"><b>Bottom right</b></div>
+	<div class="center"><b>Center</b></div>
+</body>
+</html>
