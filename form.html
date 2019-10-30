@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.h{
+			text-align: center;
+		}
+		input[type=text,numeric,email],select{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0px;
+			display: inline-block;
+			border: 1px solid grey;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=submit]{
+			width: 100%;
+			background-color:blue;
+			color: white;
+			padding: 14px 20px;
+			width: 100px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover{
+			background-color: blue;
+		}
+		div{
+			border-radius: 5px;
+			background-size: cover;
+			padding: 20px;
+		}
+		#fname{
+			margin-bottom: 30px;
+		}
+		#Lname{
+			margin-bottom: 30px;
+		}
+		#email{
+			margin-bottom: 30px;
+		}
+		#phonenumber{
+			margin-bottom: 30px;
+		}
+		#address{
+			margin-bottom: 30px;
+		}
+		#country{
+			margin-bottom: 30px;
+		}
+		label.lab {width: 120px; display: inline-block;}
+	</style>
+</head>
+<body>
+	<div>
+		<h1 class="h"><b>REGISTRATION FORM</b></h1>
+			<form>
+			<label for="fname" class="lab">FIRST NAME</label>
+			<input type="text" id="fname" name="fname"><br>
+			<label for="Lname" class="lab">LAST NAME</label>
+			<input type="text" id="Lname" name="Lname"><br>
+			<label for="email" class="lab">Email</label>
+			<input type="email" id="email" name="email"><br>
+			<label for="phone number" class="lab">PHONE NUMBER</label>
+			<input type="numeric" id="phonenumber" name="phone number"><br>
+			<label for="address" class="lab">ADDRESS</label>
+			<input type="alphanumeric" id="address" name="address"><br>
+			<label for="country" class="lab">COUNTRY</label>
+			<select id="country" name="country">
+				<option value="AUSTRALIA">AUSTRALIA</option>
+				<option value="pakistan">pakistan</option>
+				<option value="india">india</option>
+				<option value="egypt">egypt</option>
+			</select><br>
+			<input type="submit" name="SUBMIT">
+		</form>
+	</div>
+</body>
+</html>
