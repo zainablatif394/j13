@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web layout</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+.header {
+  background-image: url(1.jpg);
+  padding: 20px;
+  text-align: center;
+  height: 280px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  text-align: center;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  background-color:black;
+  padding: 10px;
+  text-align: center;
+  color:white;
+}
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="font-size:70px";>Brand</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">New In</a>
+  <a href="#">Unstiched</a>
+  <a href="#">Ready To Wear</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Categories</h2>
+    <ul>
+    	<li>Woman</li>
+    	<li>Kids</li>
+    	<li>Accessories</li>
+    	<li>Home</li>
+    </ul>
+  </div>
+  
+  <div class="column">
+    <img src="31.jpg">
+    <p style="text-align:center">Printed Kurta</p>
+    <p style="text-align:center">PKR 3,192</p>
+    <p style="text-align:center">Buy Now</p>
+  </div>
+  
+  <div class="column">
+    <h2><img src="2.jpg"></h2>
+    <p style="text-align:center">Printed Kurta</p>
+    <p style="text-align:center">PKR 3,192</p>
+    <p style="text-align:center">Buy Now</p>
+  </div>
+</div>
+<div class="footer">
+  <h2>Our company</h2>
+<p>About Us</p>
+  	<p> Career</p>
+  	<p>Contact us</p>  	
+</div>
+</body>
+</html>
